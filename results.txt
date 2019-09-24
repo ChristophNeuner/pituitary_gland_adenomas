@@ -31,18 +31,43 @@ accuracy_per_class_test
  'FSH': 0.7419354838709677}
 
 bestmodel_15
-accuracy_per_class_val
+    without tta
+    accuracy_per_class_val
 {'corticotrop': 0.9636363636363636,
  'silent': 1.0,
  'LH': 0.9454545454545454,
  'FSH': 0.9272727272727272}
-
-accuracy_per_class_test
+    
+    accuracy_per_class_test
 {'corticotrop': 0.9032258064516129,
  'silent': 0.8064516129032258,
  'LH': 0.9032258064516129,
  'FSH': 0.8387096774193549}
-
+     
+     with tta scale 1.05
+     accuracy_per_class_val
+{'corticotrop': 0.9090909090909091,
+ 'silent': 0.9818181818181818,
+ 'LH': 0.9272727272727272,
+ 'FSH': 0.8727272727272727}
+     accuracy_per_class_test
+{'corticotrop': 0.8709677419354839,
+ 'silent': 0.7419354838709677,
+ 'LH': 0.967741935483871,
+ 'FSH': 0.8064516129032258}
+      
+      with tta scale 1.35
+{'corticotrop': 0.9090909090909091,
+ 'silent': 0.9454545454545454,
+ 'LH': 0.9454545454545454,
+ 'FSH': 0.8727272727272727}
+     accuracy_per_class_test
+{'corticotrop': 0.9032258064516129,
+ 'silent': 0.7741935483870968,
+ 'LH': 0.967741935483871,
+ 'FSH': 0.8064516129032258}
+     
+     
 complete
 accuracy_per_class_val
 {'corticotrop': 0.9454545454545454,
@@ -56,7 +81,10 @@ accuracy_per_class_test
  'LH': 0.9354838709677419,
  'FSH': 0.8064516129032258}
  
- 
+
+
+
+
  
 7-xception-size512-bs12-seed_73; 2 + 20 epochs; fit_one_cycle; head: lr = 1e-3; complete: lr2 = 1e-6, lr3 = 1e-4
 ths = [0.5,0.5,0.5,0.5]
@@ -74,6 +102,9 @@ accuracy_per_class_val
  'FSH': 0.8064516129032258}
  
  
+ 
+ 
+ 
 8-inceptionv4-size512-bs16-seed_73; 2 + 20 epochs; head: lr = 1e-3; complete: lr2 = 1e-6, lr3 = 3e-5
 ths = [0.5,0.5,0.5,0.5]
 accuracy_per_class_val
@@ -88,6 +119,9 @@ accuracy_per_class_test
  'LH': 0.9354838709677419,
  'FSH': 0.8387096774193549}
  
+
+
+
 
 9-se_resnext101_32x4d-size512-bs8-epochs_head5-epochs_complete20-seed_73; 5 + 20 epochs; head: lr = 1e-3; complete: lr2 = 1e-5, lr3 = 1e-4
 ths = [0.5,0.5,0.5,0.5]
@@ -116,7 +150,47 @@ test
  'LH': 0.9032258064516129,
  'FSH': 0.7741935483870968}
  
- 
+
+
+
+
+10-xception-size1024-bs3-epochs_head5-epochs_complete20-seed_73; 5 + 20 epochs; head: lr = 1e-3; complete: lr2 = 3e-7, lr3 = 2e-6
+
+head
+epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
+0 	0.431526 	0.533388 	0.788403 	7:09:49
+1 	0.409459 	0.452604 	0.839177 	6:06:20
+2 	0.385350 	0.474705 	0.822792 	6:46:23
+3 	0.411341 	0.469532 	0.833211 	6:11:13
+4 	0.348407 	0.462830 	0.830935 	6:09:39
+complete
+epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
+0 	0.318322 	0.494469 	0.849629 	8:14:58
+1 	0.340183 	0.540839 	0.821380 	8:04:18
+2 	0.344363 	0.472851 	0.845326 	8:02:49
+3 	0.396030 	0.492753 	0.841387 	8:04:21
+4 	0.336858 	0.548487 	0.824180 	8:04:50
+5 	0.338587 	0.478039 	0.830827 	8:02:50
+6 	0.394352 	0.467988 	0.850136 	8:11:50
+7 	0.309054 	0.487845 	0.840423 	8:03:38
+8-19 -> pc neu gestartet, daher keine Aktualisierungen der Ausgabe mehr
+
+ths = [0.5,0.5,0.5,0.5]
+complete
+val
+{'corticotrop': 0.8545454545454545,
+ 'silent': 0.8727272727272727,
+ 'LH': 0.8909090909090909,
+ 'FSH': 0.8545454545454545}
+test
+{'corticotrop': 0.8387096774193549,
+ 'silent': 0.8064516129032258,
+ 'LH': 0.8387096774193549,
+ 'FSH': 0.8709677419354839}
+
+
+
+
 
 11-se_resnext101_32x4d-size512-bs8-epochs_head5-epochs_complete5-seed_73; 5 + 5 epochs; head: lr = 1e-2; complete: lr2 = 3e-7, lr3 = 1e-6
 
