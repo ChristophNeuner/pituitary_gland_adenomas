@@ -176,6 +176,30 @@ epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
 8-19 -> pc neu gestartet, daher keine Aktualisierungen der Ausgabe mehr
 
 ths = [0.5,0.5,0.5,0.5]
+bestmodel_0
+val
+{'corticotrop': 0.8909090909090909,
+ 'silent': 0.8727272727272727,
+ 'LH': 0.9454545454545454,
+ 'FSH': 0.8363636363636363}
+test
+{'corticotrop': 0.8709677419354839,
+ 'silent': 0.8064516129032258,
+ 'LH': 0.9354838709677419,
+ 'FSH': 0.7741935483870968}
+
+bestmodel_15
+val
+{'corticotrop': 0.8909090909090909,
+ 'silent': 0.8727272727272727,
+ 'LH': 0.9090909090909091,
+ 'FSH': 0.8545454545454545}
+test
+{'corticotrop': 0.8064516129032258,
+ 'silent': 0.8064516129032258,
+ 'LH': 0.9354838709677419,
+ 'FSH': 0.8064516129032258}
+ 
 complete
 val
 {'corticotrop': 0.8545454545454545,
