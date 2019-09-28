@@ -1,3 +1,22 @@
+ensembles:
+arches = {resnext101_32x8d:Path(MODEL_PATH/'6-resnext101_32x8d-size512-bs8-seed_73/bestmodel_15'),
+          se_resnext101_32x4d:MODEL_PATH/'11-se_resnext101_32x4d-size512-bs10-epochs_head5-epochs_complete5-seed_73/11-se_resnext101_32x4d-size512-bs8-epochs_head5-epochs_complete5-seed_73-complete'}
+ths = [0.5,0.5,0.5,0.5]
+
+accuracy_per_class_val
+{'corticotrop': 0.8909090909090909,
+ 'silent': 0.9818181818181818,
+ 'LH': 0.8727272727272727,
+ 'FSH': 0.8727272727272727}
+accuracy_per_class_test
+{'corticotrop': 0.8064516129032258,
+ 'silent': 0.7419354838709677,
+ 'LH': 0.9032258064516129,
+ 'FSH': 0.8387096774193549}
+
+
+################################################################################################################################
+
 5-resnet50-size1024-bs5-seed_73; 2 + 19 epochs; fit_one_cycle; head: lr = 1e-4; complete: lr2 = 6e-7, lr3 = 8e-6
 ths = [0.5,0.5,0.5,0.5]
 accuracy_per_class_val
