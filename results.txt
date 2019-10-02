@@ -314,7 +314,18 @@ accuracy_per_class_test
  'LH': 0.8709677419354839,
  'FSH': 0.9032258064516129}
  
+bestmodel_6
+accuracy_per_class_val
+{'corticotrop': 0.9454545454545454,
+ 'silent': 0.9818181818181818,
+ 'LH': 0.9090909090909091,
+ 'FSH': 0.8727272727272727}
 
+accuracy_per_class_test
+{'corticotrop': 0.967741935483871,
+ 'silent': 0.9354838709677419,
+ 'LH': 0.9032258064516129,
+ 'FSH': 0.9032258064516129}
 
 complete
 accuracy_per_class_val
