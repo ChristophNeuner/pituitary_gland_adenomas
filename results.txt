@@ -301,6 +301,7 @@ epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
 8 	0.180673 	0.170905 	0.937988 	4:17:27
 9 	0.214484 	0.156491 	0.941649 	4:18:01
 
+ths = [0.5,0.5,0.5,0.5]
 bestmodel_0
 accuracy_per_class_val
 {'corticotrop': 0.9090909090909091,
@@ -326,6 +327,18 @@ accuracy_per_class_test
  'silent': 0.9354838709677419,
  'LH': 0.9032258064516129,
  'FSH': 0.9032258064516129}
+
+bestmodel_6 with tta scale=1.35, beta=0.4
+accuracy_per_class_val
+{'corticotrop': 0.9090909090909091,
+ 'silent': 0.9090909090909091,
+ 'LH': 0.8909090909090909,
+ 'FSH': 0.8727272727272727}
+accuracy_per_class_test
+{'corticotrop': 0.9354838709677419,
+ 'silent': 1.0,
+ 'LH': 0.8709677419354839,
+ 'FSH': 0.8387096774193549}
 
 complete
 accuracy_per_class_val
