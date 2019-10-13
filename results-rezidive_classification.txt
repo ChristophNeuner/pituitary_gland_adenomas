@@ -52,4 +52,112 @@ accuracy_per_class_test
 
 
 
+3-resnext101_32x8d-size512-bs6-epochs_head5-epochs_complete10-seed_23-test_pct_0-valid_pct_0.15; 5 + 10 epochs; fit_one_cycle; head: lr = 1e-4; complete: lr2 = 4e-7, lr3 = 2e-6;
 
+head
+epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
+0 	0.476036 	1.063820 	0.584251 	1:16:39
+1 	0.253603 	0.950927 	0.648489 	1:16:49
+2 	0.216132 	0.742570 	0.746336 	1:16:49
+3 	0.217071 	0.785726 	0.721268 	1:16:46
+4 	???
+
+complete
+epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
+???
+
+ths = [0.5,0.5]
+accuracy_per_class_val
+{'non_relapse': 0.6923076923076923, 'relapse': 0.6923076923076923}
+ 
+accuracy_per_class_test
+no test set
+
+
+
+4-resnext101_32x8d-size512-bs6-epochs_head5-epochs_complete10-seed_69-test_pct_0-valid_pct_0.15; 5 + 10 epochs; fit_one_cycle; head: lr = 4e-4; complete: lr2 = 1e-7, lr3 = 1e-6;
+
+epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
+0 	0.369602 	0.323050 	0.868236 	1:18:40
+1 	0.293107 	0.344109 	0.854292 	1:19:02
+2 	0.202350 	0.331438 	0.867788 	1:19:07
+3 	0.135799 	0.298974 	0.886082 	1:19:00
+4 	0.203151 	0.373304 	0.841819 	1:19:30
+
+complete
+epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
+0 	0.148385 	0.309296 	0.885634 	1:57:00
+1 	0.163059 	0.332250 	0.859857 	1:54:29
+2 	0.149458 	0.337425 	0.870411 	1:54:20
+... <TODO: noch ergänzen>
+
+
+ths = [0.5,0.5]
+accuracy_per_class_val
+<TODO: noch ergänzen>
+ 
+accuracy_per_class_test
+no test set
+
+
+
+
+5-resnext101_32x8d-size512-bs8-epochs_head5-epochs_complete10-seed_54-test_pct_0-valid_pct_0.15; 5 + 10 epochs; fit_one_cycle; head: lr = 1e-4; complete: lr2 = 2e-6, lr3 = 1e-5;
+
+epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
+0 	0.448827 	0.867537 	0.666518 	1:13:47
+1 	0.219840 	0.656765 	0.743977 	1:13:52
+2 	0.164403 	0.740386 	0.745427 	1:13:47
+3 	0.142662 	0.714676 	0.738847 	1:13:41
+4 	0.148336 	0.748646 	0.744256 	1:11:51
+
+complete
+epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
+0 	0.140674 	0.746260 	0.759313 	1:48:47
+1 	0.124491 	0.963998 	0.682188 	1:49:17
+2 	0.146270 	0.864861 	0.716206 	1:49:19
+3 	0.081992 	0.667248 	0.760874 	1:47:52
+4 	0.116808 	0.939548 	0.716206 	1:44:38
+5 	0.094796 	0.812215 	0.739126 	1:44:14
+6 	0.063325 	0.821487 	0.728418 	1:43:53
+7 	0.061355 	0.774801 	0.758253 	1:43:28
+8 	0.072429 	0.853499 	0.728586 	1:43:41
+9 	0.056928 	0.882092 	0.716652 	1:48:16
+
+ths = [0.5,0.5]
+
+copi_val
+{'841-12': [1597, tensor([1491.,  109.]), array([1, 0])],
+ '1340-12': [2219, tensor([1962.,  266.]), array([1, 0])],
+ '631-12': [782, tensor([621., 161.]), array([1, 0])],
+ '670-12': [1340, tensor([1328.,   12.]), array([1, 0])],
+ '131-12': [1984, tensor([1102.,  891.]), array([1, 0])],
+ '772-12': [1357, tensor([1335.,   26.]), array([1, 0])],
+ '448-13': [817, tensor([ 28., 787.]), array([0, 1])],
+ '10-14': [848, tensor([  0., 848.]), array([0, 1])],
+ '1737-11': [756, tensor([410., 346.]), array([0, 1])],
+ '744-16': [892, tensor([127., 758.]), array([0, 1])],
+ '1671-12': [285, tensor([ 17., 268.]), array([0, 1])],
+ '1945-14': [682, tensor([ 13., 670.]), array([0, 1])],
+ '1883-12': [59, tensor([11., 46.]), array([0, 1])],
+ '1452-12': [90, tensor([ 0., 90.]), array([0, 1])]}
+preds_th_val 
+ {'841-12': [[True, False], array([1, 0])],
+ '1340-12': [[True, False], array([1, 0])],
+ '631-12': [[True, False], array([1, 0])],
+ '670-12': [[True, False], array([1, 0])],
+ '131-12': [[True, False], array([1, 0])],
+ '772-12': [[True, False], array([1, 0])],
+ '448-13': [[False, True], array([0, 1])],
+ '10-14': [[False, True], array([0, 1])],
+ '1737-11': [[True, False], array([0, 1])],
+ '744-16': [[False, True], array([0, 1])],
+ '1671-12': [[False, True], array([0, 1])],
+ '1945-14': [[False, True], array([0, 1])],
+ '1883-12': [[False, True], array([0, 1])],
+ '1452-12': [[False, True], array([0, 1])]}
+accuracy_per_class_val
+{'non_relapse': 0.9285714285714286, 'relapse': 0.9285714285714286}
+ 
+accuracy_per_class_test
+no test set
