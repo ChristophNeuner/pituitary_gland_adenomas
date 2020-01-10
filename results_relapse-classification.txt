@@ -195,3 +195,66 @@ accuracy_per_class_val
  
 accuracy_per_class_test
 no test set
+
+
+
+
+6-resnext101_32x8d-size512-bs6-epochs_head5-epochs_complete10-seed_54-test_pct_0-valid_pct_0.15; 5 + 10 epochs; fit_one_cycle; head: lr = 1e-4; complete: lr2 = 2e-6, lr3 = 1e-5;
+
+epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
+0 	0.438587 	1.525122 	0.518116 	1:14:06
+1 	0.293489 	0.926464 	0.597261 	1:14:08
+2 	0.215412 	0.580296 	0.760211 	1:14:05
+3 	0.229420 	0.901737 	0.635175 	1:14:03
+4 	0.173942 	0.753794 	0.710860 	1:13:58
+
+complete
+epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
+0 	0.184146 	0.837304 	0.682604 	1:48:09
+1 	0.223332 	0.836381 	0.693369 	1:48:28
+2 	0.157778 	0.807590 	0.684959 	1:48:32
+3 	0.183372 	0.709369 	0.730418 	1:48:35
+4 	0.127702 	1.082236 	0.646901 	1:48:34
+5 	0.125073 	0.815303 	0.679049 	1:48:33
+6 	0.113360 	0.971387 	0.619894 	1:48:37
+7 	0.123810 	0.762344 	0.771784 	1:57:18
+8 	0.099701 	1.088122 	0.767803 	1:57:00
+9 	0.120114 	1.047603 	0.761598 	1:56:37
+
+ths = [0.5,0.5]
+
+copi_val
+{'630-12': [2712, tensor([2614.,   91.]), array([1, 0])],
+ '261-12': [1957, tensor([ 466., 1478.]), array([1, 0])],
+ '1285-12': [515, tensor([515.,   0.]), array([1, 0])],
+ '1882-12': [107, tensor([100.,   7.]), array([1, 0])],
+ '631-12': [782, tensor([761.,  20.]), array([1, 0])],
+ '692-12': [297, tensor([296.,   1.]), array([1, 0])],
+ '448-13': [817, tensor([ 60., 754.]), array([0, 1])],
+ '10-14': [848, tensor([  0., 848.]), array([0, 1])],
+ '1737-11': [756, tensor([602., 152.]), array([0, 1])],
+ '744-16': [892, tensor([121., 767.]), array([0, 1])],
+ '1671-12': [285, tensor([ 46., 241.]), array([0, 1])],
+ '1945-14': [682, tensor([ 97., 579.]), array([0, 1])],
+ '1883-12': [59, tensor([34., 26.]), array([0, 1])],
+ '1452-12': [90, tensor([ 1., 89.]), array([0, 1])]}
+preds_th_val 
+ {'630-12': [[True, False], array([1, 0])],
+ '261-12': [[False, True], array([1, 0])],
+ '1285-12': [[True, False], array([1, 0])],
+ '1882-12': [[True, False], array([1, 0])],
+ '631-12': [[True, False], array([1, 0])],
+ '692-12': [[True, False], array([1, 0])],
+ '448-13': [[False, True], array([0, 1])],
+ '10-14': [[False, True], array([0, 1])],
+ '1737-11': [[True, False], array([0, 1])],
+ '744-16': [[False, True], array([0, 1])],
+ '1671-12': [[False, True], array([0, 1])],
+ '1945-14': [[False, True], array([0, 1])],
+ '1883-12': [[True, False], array([0, 1])],
+ '1452-12': [[False, True], array([0, 1])]}
+accuracy_per_class_val
+{'non_relapse': 0.7857142857142857, 'relapse': 0.7857142857142857}
+ 
+accuracy_per_class_test
+no test set

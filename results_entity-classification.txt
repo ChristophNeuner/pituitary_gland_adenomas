@@ -233,8 +233,6 @@ test
 
 
 
-
-
 11-se_resnext101_32x4d-size512-bs8-epochs_head5-epochs_complete5-seed_73; 5 + 5 epochs; head: lr = 1e-2; complete: lr2 = 3e-7, lr3 = 1e-6
 
 head
@@ -352,3 +350,6 @@ accuracy_per_class_test
  'silent': 0.967741935483871,
  'LH': 0.9032258064516129,
  'FSH': 0.9032258064516129}
+ 
+ 
+ 
