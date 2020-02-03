@@ -449,3 +449,48 @@ accuracy_per_class_val
  'silent': 0.9,
  'LH': 0.8142857142857143,
  'FSH': 0.7428571428571429}
+ 
+
+13-resnext101_32x8d-size512-bs6-epochs_head5-epochs_complete10-seed_19-valid_pct_0.20057306590257878-n_splits_5-tiles_1+2+3-cross_valid_iteration_3
+5 + 10 epochs; head: lr = 1e-3; 
+head
+epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
+0 	0.319083 	0.387689 	0.849739 	4:47:54
+1 	0.281320 	0.332628 	0.882539 	4:46:12
+2 	0.228817 	0.313583 	0.879869 	4:45:13
+3 	0.232035 	0.364092 	0.886002 	4:44:36
+4 	0.194320 	0.325328 	0.894389 	4:44:40
+
+complete: lr2 = 1e-9, lr3 = 1e-8
+complete
+epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
+0 	0.222097 	0.329168 	0.889902 	6:56:46
+1 	0.195086 	0.352352 	0.886042 	6:56:19
+2 	0.198389 	0.325004 	0.887133 	6:57:07
+3 	0.186110 	0.315019 	0.892046 	6:57:23
+4 	0.186917 	0.334094 	0.883754 	6:57:10
+
+complete: lr2 = 1e-7, lr3 = 1e-6
+...
+
+
+13-resnext101_32x8d-size512-bs6-epochs_head5-epochs_complete10-seed_19-valid_pct_0.1977077363896848-n_splits_5-tiles_1+2+3-cross_valid_iteration_4
+5 + 10 epochs; head: lr = 1e-3; 
+head
+epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
+0 	0.273735 	0.606389 	0.766750 	5:04:00
+1 	0.262906 	0.591563 	0.797762 	5:02:36
+2 	0.237954 	0.547301 	0.795608 	5:02:07
+3 	0.201367 	0.546493 	0.814098 	5:01:17
+4 	0.181389 	0.593317 	0.821878 	5:01:00
+
+complete: lr2 = 1e-9, lr3 = 1e-8
+complete
+epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
+0 	0.162196 	0.571752 	0.819673 	7:19:39
+1 	0.145614 	0.589894 	0.813670 	7:19:21
+2 	0.152875 	0.549055 	0.817227 	7:20:07
+3 	0.183080 	0.580878 	0.816334 	7:20:18
+
+complete: lr2 = 1e-7, lr3 = 1e-6
+...
