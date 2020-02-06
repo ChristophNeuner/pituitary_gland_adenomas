@@ -355,8 +355,8 @@ accuracy_per_class_test
 ####################################################################################################################
 
 13-resnext101_32x8d-size512-bs6-epochs_head5-epochs_complete10-seed_19-valid_pct_0.20057306590257878-n_splits_5-tiles_1+2+3-cross_valid_iteration_0
-5 + 10 epochs; head: lr = 1e-3; complete: lr2 = 1e-9, lr3 = 1e-8
-head
+5 + 10 epochs 
+head: lr = 1e-3
 epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
 0 	0.272825 	0.365148 	0.834329 	4:55:45
 1 	0.291709 	0.390733 	0.816432 	4:53:25
@@ -364,7 +364,7 @@ epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
 3 	0.237085 	0.371157 	0.864574 	4:51:40
 4 	0.180815 	0.336132 	0.853385 	4:51:31
 
-complete
+complete: lr2 = 1e-9, lr3 = 1e-8
 epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
 0 	0.245434 	0.130187 	0.958295 	6:42:54
 1 	0.249303 	0.124289 	0.953619 	6:41:52
@@ -376,10 +376,8 @@ epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
 7 	0.229249 	0.242812 	0.946311 	6:41:48
 8 	0.280661 	0.111028 	0.958126 	6:41:25
 9 	0.270132 	0.147887 	0.951468 	6:41:10
-
+complete: lr2 = 1e-9, lr3 = 1e-8
 ths = [0.5,0.5,0.5,0.5]
-
-complete
 accuracy_per_class_val
 {'corticotrop': 0.9571428571428572,
  'silent': 0.9857142857142858,
@@ -388,8 +386,8 @@ accuracy_per_class_val
  
  
 13-resnext101_32x8d-size512-bs6-epochs_head5-epochs_complete10-seed_19-valid_pct_0.20057306590257878-n_splits_5-tiles_1+2+3-cross_valid_iteration_1
-5 + 10 epochs; head: lr = 1e-3; complete: lr2 = 1e-9, lr3 = 1e-8
-head
+5 + 10 epochs;
+head: lr = 1e-3
 epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
 0 	0.276533 	0.478958 	0.800630 	4:54:33
 1 	0.259640 	0.488645 	0.796333 	4:51:28
@@ -397,7 +395,7 @@ epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
 3 	0.214677 	1.405386 	0.829179 	4:50:19
 4 	0.200264 	0.524408 	0.826627 	4:50:08
 
-complete
+complete: lr2 = 1e-9, lr3 = 1e-8
 epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
 0 	0.269074 	1.543186 	0.924908 	7:15:14
 1 	0.273606 	0.700972 	0.925176 	7:13:23
@@ -409,9 +407,8 @@ epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
 7 	0.241741 	0.228010 	0.931297 	7:12:33
 8 	0.233446 	0.351598 	0.932557 	7:12:37
 9 	0.251520 	0.217694 	0.935713 	7:15:00
-
+complete: lr2 = 1e-9, lr3 = 1e-8
 ths = [0.5,0.5,0.5,0.5]
-complete
 accuracy_per_class_val
 {'corticotrop': 0.8714285714285714,
  'silent': 0.9571428571428572,
@@ -420,8 +417,8 @@ accuracy_per_class_val
  
  
 13-resnext101_32x8d-size512-bs6-epochs_head5-epochs_complete10-seed_19-valid_pct_0.20057306590257878-n_splits_5-tiles_1+2+3-cross_valid_iteration_2
-5 + 10 epochs; head: lr = 1e-3; complete: lr2 = 1e-9, lr3 = 1e-8
-head
+5 + 10 epochs; ; 
+head: lr = 1e-3
 epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
 0 	0.308481 	0.432840 	0.821894 	5:13:53
 1 	0.234633 	0.394834 	0.845293 	5:11:58
@@ -429,7 +426,7 @@ epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
 3 	0.205811 	0.527052 	0.833244 	5:10:40
 4 	0.174190 	0.494815 	0.842811 	5:11:04
 
-complete
+complete: lr2 = 1e-9, lr3 = 1e-8
 epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
 0 	0.268906 	0.130015 	0.960961 	7:10:12
 1 	0.226450 	0.140493 	0.959305 	7:09:51
@@ -441,9 +438,8 @@ epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
 7 	0.218194 	0.123782 	0.960447 	7:08:45
 8 	0.271372 	0.116055 	0.963545 	7:08:25
 9 	0.288390 	0.120983 	0.962876 	7:09:44
-
+complete: lr2 = 1e-9, lr3 = 1e-8
 ths = [0.1,0.1,0.1,0.1]
-complete
 accuracy_per_class_val
 {'corticotrop': 0.9285714285714286,
  'silent': 0.9,
@@ -462,16 +458,26 @@ epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
 4 	0.194320 	0.325328 	0.894389 	4:44:40
 
 complete: lr2 = 1e-9, lr3 = 1e-8
-complete
 epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
 0 	0.222097 	0.329168 	0.889902 	6:56:46
 1 	0.195086 	0.352352 	0.886042 	6:56:19
 2 	0.198389 	0.325004 	0.887133 	6:57:07
 3 	0.186110 	0.315019 	0.892046 	6:57:23
 4 	0.186917 	0.334094 	0.883754 	6:57:10
+hier abgebrochen
 
 complete: lr2 = 1e-7, lr3 = 1e-6
-...
+epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
+0 	0.255831 	0.148362 	0.946333 	7:23:31
+1 	0.204496 	0.169166 	0.936597 	7:27:08
+2 	0.242017 	0.166809 	0.940247 	7:28:02
+3 	0.189082 	0.182264 	0.930123 	7:21:45
+4 	0.208899 	0.182539 	0.933056 	7:22:12
+5 	0.193673 	0.181470 	0.931299 	7:23:32
+6 	0.185537 	0.182830 	0.930402 	7:20:13
+7 	0.185180 	0.203235 	0.919511 	7:21:43
+8 	0.201172 	0.182753 	0.930216 	7:22:04
+9 	0.207754 	0.183740 	0.929039 	7:21:01
 
 
 13-resnext101_32x8d-size512-bs6-epochs_head5-epochs_complete10-seed_19-valid_pct_0.1977077363896848-n_splits_5-tiles_1+2+3-cross_valid_iteration_4
@@ -483,14 +489,25 @@ epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
 2 	0.237954 	0.547301 	0.795608 	5:02:07
 3 	0.201367 	0.546493 	0.814098 	5:01:17
 4 	0.181389 	0.593317 	0.821878 	5:01:00
+hier abgebrochen
 
 complete: lr2 = 1e-9, lr3 = 1e-8
-complete
 epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
 0 	0.162196 	0.571752 	0.819673 	7:19:39
 1 	0.145614 	0.589894 	0.813670 	7:19:21
 2 	0.152875 	0.549055 	0.817227 	7:20:07
 3 	0.183080 	0.580878 	0.816334 	7:20:18
+hier abgebrochen
 
 complete: lr2 = 1e-7, lr3 = 1e-6
-...
+epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
+0 	0.224448 	0.155925 	0.940141 	7:15:54
+1 	0.207634 	0.171573 	0.938107 	7:19:34
+2 	0.266037 	0.183663 	0.935197 	7:21:05
+3 	0.194361 	0.195333 	0.931544 	7:14:35
+4 	0.175299 	0.212196 	0.927266 	7:14:16
+5 	0.188710 	0.206250 	0.930983 	7:15:45
+6 	0.174654 	0.191333 	0.929631 	7:12:46
+7 	0.196873 	0.217862 	0.923779 	7:13:35
+8 	0.155799 	0.192027 	0.932687 	7:14:18
+9 	0.198393 	0.196999 	0.926314 	7:13:26
