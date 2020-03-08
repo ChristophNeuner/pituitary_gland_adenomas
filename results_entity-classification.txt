@@ -558,3 +558,10 @@ epoch 	train_loss 	valid_loss 	accuracy_thresh 	time
 7 	0.196873 	0.217862 	0.923779 	7:13:35
 8 	0.155799 	0.192027 	0.932687 	7:14:18
 9 	0.198393 	0.196999 	0.926314 	7:13:26
+
+
+13 - Combined over all 5 cross validation sets
+{'corticotrop': 0.9169054441260746,
+ 'silent': 0.9369627507163324,
+ 'LH': 0.8882521489971347,
+ 'FSH': 0.8510028653295129}
